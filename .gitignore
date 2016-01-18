@@ -74,6 +74,7 @@ local.properties
 
 # Eclipse Core
 .project
+.classpath
 
 # PDT-specific
 .buildpath
