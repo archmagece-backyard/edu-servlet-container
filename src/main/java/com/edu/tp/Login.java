@@ -1,15 +1,10 @@
 package com.edu.tp;
 
+import javax.servlet.ServletException;
+import javax.servlet.http.*;
 import java.io.IOException;
 import java.util.Date;
 import java.util.concurrent.atomic.AtomicLong;
-
-import javax.servlet.ServletException;
-import javax.servlet.http.Cookie;
-import javax.servlet.http.HttpServlet;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
-import javax.servlet.http.HttpSession;
 
 public class Login extends HttpServlet {
 
@@ -22,7 +17,7 @@ public class Login extends HttpServlet {
 	}
 
 	public void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		// com.edu.tp.Login
+		// main.java.tp.Login
 
 		for (Cookie cookie : request.getCookies()) {
 			System.out.println("Cookie : " + cookie.getName() + " / " + cookie.getValue());

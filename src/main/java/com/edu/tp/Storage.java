@@ -1,9 +1,8 @@
 package com.edu.tp;
 
+import javax.servlet.http.HttpServlet;
 import java.util.HashMap;
 import java.util.Map;
-
-import javax.servlet.http.HttpServlet;
 
 public class Storage {
 

@@ -1,20 +1,15 @@
 package com.edu.tp;
 
-import java.io.BufferedReader;
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.IOException;
-import java.io.InputStreamReader;
-import java.net.Socket;
-
 import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServlet;
+import java.io.*;
+import java.net.Socket;
 
-public class Process implements Runnable {
+public class ServletProcess implements Runnable {
 
 	private Socket socket;
 
-	public Process(Socket socket) {
+	public ServletProcess(Socket socket) {
 		this.socket = socket;
 	}
 

@@ -13,7 +13,7 @@ public class ServerDaemon {
 
 		ServerSocket ss = new ServerSocket(8080);
 		while (true) {
-			se.submit(new Process(ss.accept()));
+			se.submit(new ServletProcess(ss.accept()));
 		}
 
 	}
